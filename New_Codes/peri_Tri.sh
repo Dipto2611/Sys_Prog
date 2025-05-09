@@ -1,6 +1,7 @@
-echo "Enter the length and breadth of the rectangle:"
-read l
+echo "Enter the three sides of the triangle:"
+read a
 read b
-echo "Perimeter of the rectangle is:"
-p=$(echo "2 * ($l + $b)" | bc)
+read c
+echo "Perimeter of the triangle is:"
+p=$(echo "$a + $b + $c" | bc)
 echo "$p"
